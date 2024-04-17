@@ -1,0 +1,251 @@
+/* Colour Scheme: #Cc4e5ff, #1669a9, #00233e */
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1020px;
+}
+
+body {
+    margin: 0;
+    background-color: #c4e5ff;
+}
+
+figure {
+    background-color: #1669a9;
+    width: 90%;
+    text-align: center;
+    margin: 1rem;
+    border-radius: 0.5rem;
+}
+
+figure > img {
+    margin: 1rem;
+    border-radius: 0.5rem;
+}
+
+figcaption {
+    color: white;
+    padding: 1rem;
+    padding-top: 0;
+}
+
+img {
+    width: 90%;
+}
+
+* {
+    font-family: "Nunito", sans-serif;
+    color:#00233e;
+    line-height: 1.6;
+    font-size: 0.75rem;
+}
+
+h1 {
+    font-size: 1.25rem;
+}
+
+h2 {
+    font-size: 1rem;
+}
+
+.mainheading {
+    font-size: 2rem;
+    color: white;
+}
+
+h1, h2, h3 {
+    font-family: "Playfair Display", serif;
+}
+
+.masthead {
+    background-image: url("../img/moneymasthead.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    min-height: 7rem;
+    text-shadow: 0 0 0.7rem black;
+}
+
+.masthead h2 {
+    color: white;
+    padding-bottom: 1rem;
+}
+
+navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+navigation i {
+    font-size: 2rem;
+}
+
+ul.nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul.nav > li {
+    background-color: #1669a9;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    margin: 1rem;
+    width: 15rem;
+}
+
+ul.nav > li:hover {
+    background-color: #0d4671;
+}
+
+ul.nav > li:active {
+    background-color: #0a304c;
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.article ul {
+    align-self:baseline;
+    padding: 0 1rem;
+}
+
+.article h3 {
+    margin-bottom: 0;
+    align-self: baseline;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    padding-top: 0rem;
+    text-align: center;
+}
+
+footer > * {
+    margin: 0;
+}
+
+footer > h2 {
+    margin-bottom: 0.5rem;
+}
+
+.social {
+    margin-top: 0.5rem;
+}
+
+.social i {
+    font-size: 1.75rem;
+    margin-right: 0.75rem;
+}
+
+.pieces {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+@media only screen and (min-width: 35rem) {
+    * {
+        font-size: 1rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    .mainheading {
+        font-size: 3rem;
+    }
+
+    .nav {
+        display: flex;
+    }
+
+    figure {
+        width: 40%;
+        float:left;
+        margin: 0 1rem 1rem 0rem;
+    }
+
+    .figninety figure {
+        margin: 1rem 0;
+    }
+
+    .article {
+        display: block;
+    }
+
+    .article h1 {
+        text-align: center;
+    }
+
+    navigation i {
+        font-size: 3rem;
+    }
+
+    .figninety img {
+        width: 85%;
+    }
+
+    footer {
+        text-align: left;
+    }
+}
+
+@media only screen and (min-width: 80rem) {
+    * {
+        font-size: 1.25rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    h2 {
+        font-size: 1.75rem;
+    }
+    
+    .mainheading {
+        font-size: 3.5rem;
+    }
+
+    .article h1 {
+        text-align: left;
+    }
+
+    .masthead {
+        text-align: left;
+    }
+
+    .pieces {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+    .figninety figure {
+        width: 90%;
+    }
+
+    navigation {
+        flex-direction: row;
+    }
+    
+    navigation i {
+        margin-right: 1rem;
+    }
+}
